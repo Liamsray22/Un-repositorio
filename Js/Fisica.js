@@ -73,10 +73,43 @@ function convertirmilisegundosSegundos(milisegundos){
 
 }
 
-function convertirsegundosHoras(segundos){
-	horas = segundos/3600;
-	alert(horas);
+function convertirsegundosmilisegundos(segundos){
+	milisegundos = segundos*1000;
+	alert(milisegundos);
 } 
+
+//Magnitudes Fisicas de tiempo********************************************
+
+
+
+//Magnitudes Fisicas de distancia
+
+function convertirMetroMilla(metro){
+
+	milla = metro/1609;
+	alert(milla);
+
+}
+
+function convertirMillaMetro(milla){
+	metro = milla*1609;
+	alert(metro);
+
+}
+
+function convertirMetroKm(metro){
+	km = metro/1000;
+	alert(km);
+
+
+}
+
+function convertirKmMetro(km){
+	metro =  km *1000;
+	alert(metro);
+
+}
+
 
 
 
@@ -86,15 +119,16 @@ function convertirsegundosHoras(segundos){
 //convertirmSegundosaMiHoras(60);
 
 //convertirminutosSegundos(2);
-//convertirhorasSegundos(4);
 //convertirsegundosMinutos(120);
+//convertirhorasSegundos(4);
 //convertirsegundosHoras(120);
+//convertirmilisegundosSegundos(100);
+//convertirsegundosmilisegundos(2);
 
-
-
-
-
-
+//convertirMetroMilla(12);
+//convertirMillaMetro(12);
+//convertirMetroKm(10);
+//convertirKmMetro(10);
 
 
 
