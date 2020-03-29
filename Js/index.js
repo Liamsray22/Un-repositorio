@@ -5,3 +5,8 @@ function mru(){
 	"<label for='tiempo'>Tiempo:</label> <br><input type='text' id='Tiempo' name='Tiempo'></br>";
 
 }
+
+function mru(){
+
+	document.getElementById("f").innerHTML ="Tu jeva";
+}
