@@ -133,22 +133,22 @@ function cl(){
 function tv(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label for='tiempo'>Velocidad Final:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+	"<label for='tiempo'>Velocidad Final:</label> <br><input type='text' id='vFinalTv' name='Tiempo'><select id='cars'>"+
 	"<option value='volvo'>Km/H</option>"+
 	"<option value='saab'>Mi/H</option>"+
 	"<option value='mercedes'>m/seg</option>"+
   "</select><br>"+ 
-  "<label for='tiempo'>Velocidad Inicial:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+  "<label for='tiempo'>Velocidad Inicial:</label> <br><input type='text' id='vInicialTv' name='Tiempo'><select id='cars'>"+
 	"<option value='volvo'>Km/H</option>"+
 	"<option value='saab'>Mi/H</option>"+
 	"<option value='mercedes'>m/seg</option>"+
   "</select><br>"+ 
-	"<label for='Distancia'>Altura:</label><br><input type='text' id='distancia' name='distancia'> <select id='cars'>"+
+	"<label for='Distancia'>Altura:</label><br><input type='text' id='alturaTv' name='distancia'> <select id='cars'>"+
 	"<option value='volvo'>Mill</option>"+
 	"<option value='saab'>KM</option>"+
 	"<option value='mercedes'>M</option>"+
   "</select> <br>"+
-  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='tiempoTv' name='Tiempo'><select id='cars'>"+
   "<option value='volvo'>H</option>"+
   "<option value='saab'>Min</option>"+
   "<option value='mercedes'>Sec</option>"+
@@ -156,13 +156,19 @@ function tv(){
 "</select> <br>"+
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
-"<input type='radio' id='male' name='gender' value='male'>"+
-"<label for='male'>Male</label><br>"+
-"	<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='female'>Female</label><br>"+
-"<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='female'>Female</label><br>"+
-"<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='other'>Other</label>"
+"<input type='radio' id='vFinalTvRad' name='gender' value='male'>"+
+"<label for='male'>Velocidad Final</label><br>"+
+
+"	<input type='radio' id='vInicialTvRad' name='gender' value='female'>"+
+"<label for='female'>Velocidad Inicial</label><br>"+
+
+"<input type='radio' id='alturaTvRad' name='gender' value='female'>"+
+"<label for='female'>Altura</label><br>"+
+
+"<input type='radio' id='tiempoTvRad' name='gender' value='female'>"+
+"<label for='other'>Tiempo</label>"+
+
+"<br><button onclick='FindDatos()'>Calcular</button>";
+
 
 }
