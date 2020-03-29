@@ -188,6 +188,9 @@ function encontrarvIsintiempo(vFinal, aceleracion, distancia){
 }
 //Fin Velocidad Inicial ***********************************************************
 
+
+// Encontrar Aceleracion 
+
 function encontrarAceleracionSinDistancia(vFinal, tiempo, vInicial){
     vFinal = parseFloat(vFinal);
     tiempo = parseFloat(tiempo);
@@ -196,6 +199,73 @@ function encontrarAceleracionSinDistancia(vFinal, tiempo, vInicial){
     aceleracion = (vFinal - vInicial)/tiempo;
 
 }
+
+function encontrarAceleracionSinvFinal(vInicial, tiempo, distancia){
+    vInicial = parseFloat(vInicial);
+    tiempo = parseFloat(tiempo);
+    distancia = parseFloat(distancia);
+
+    aceleracion = (2*(distancia - (vInicial*tiempo)))/Math.pow(tiempo, 2);
+
+
+
+}
+
+function encontrarAceleracionSinTiempo(vInicial, vFinal, distancia){
+    vInicial = parseFloat(vInicial);
+    vFinal = parseFloat(vFinal);
+    distancia = parseFloat(distancia);    
+
+    aceleracion = (Math.pow(vInicial,2) - Math.pow(vFinal, 2)/(2*distancia));
+
+
+}
+
+
+
+//Fin Aceleracion*****************************************************************
+
+
+
+//Encontrar Tiempo
+
+function encontrarTiempoSinDistancia(vFinal, vInicial, aceleracion){
+    vInicial = parseFloat(vInicial);
+    vFinal = parseFloat(vFinal);
+    aceleracion = parseFloat(aceleracion);
+    
+    tiempo = (vInicial - vFinal)/aceleracion;
+
+}
+
+function encontrarTiempoSinAceleracion(vInicial, vFinal, distancia){
+    vInicial = parseFloat(vInicial);
+    vFinal = parseFloat(vFinal);
+    distancia = parseFloat(distancia);
+
+    tiempo = (2*distancia)/ (vInicial + vFinal);
+
+}
+
+
+function encontrarTiempoSinvFinal(vInicial, aceleracion, distancia){
+    vInicial = parseFloat(vInicial);
+    aceleracion = parseFloat(aceleracion);
+    distancia = parseFloat(distancia);
+
+    tiempo = (Math.sqrt((2*aceleracion*distancia)+Math.pow(vInicial, 2) ) - vInicial)/aceleracion;
+
+
+
+}
+
+
+
+
+
+
+
+
 
 
 
