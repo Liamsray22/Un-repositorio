@@ -35,6 +35,8 @@ function mru(){
   "</select> <br>"+ 
 	"<br><button onclick='verVacio()'>Calcular</button>";
 
+
+
 }
 
 function mruv(){
@@ -65,7 +67,19 @@ function mruv(){
   "<option value='saab'>Min</option>"+
   "<option value='mercedes'>Sec</option>"+
   "<option value='audi'>Ms</option>"+
-"</select> <br>"
+"</select> <br>"+
+/////////RADIO
+" <p>Por favor escoja que dato buscara:</p>"+
+"<input type='radio' id='male' name='gender' value='male'>"+
+"<label for='male'>Male</label><br>"+
+"	<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='female'>Female</label><br>"+
+"<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='female'>Female</label><br>"+
+"<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='other'>Other</label>"+
+"<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='other'>Other</label>";
 }
 
 function cl(){
@@ -91,7 +105,18 @@ function cl(){
   "<option value='saab'>Min</option>"+
   "<option value='mercedes'>Sec</option>"+
   "<option value='audi'>Ms</option>"+
-"</select> <br>"
+"</select> <br>"+
+/////////RADIO
+" <p>Por favor escoja que dato buscara:</p>"+
+"<input type='radio' id='male' name='gender' value='male'>"+
+"<label for='male'>Male</label><br>"+
+"	<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='female'>Female</label><br>"+
+"<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='female'>Female</label><br>"+
+"<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='female'>Female</label><br>"
+
 }
 
 function tv(){
@@ -117,5 +142,16 @@ function tv(){
   "<option value='saab'>Min</option>"+
   "<option value='mercedes'>Sec</option>"+
   "<option value='audi'>Ms</option>"+
-"</select> <br>"
+"</select> <br>"+
+/////////RADIO
+" <p>Por favor escoja que dato buscara:</p>"+
+"<input type='radio' id='male' name='gender' value='male'>"+
+"<label for='male'>Male</label><br>"+
+"	<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='female'>Female</label><br>"+
+"<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='female'>Female</label><br>"+
+"<input type='radio' id='female' name='gender' value='female'>"+
+"<label for='other'>Other</label>"
+
 }
