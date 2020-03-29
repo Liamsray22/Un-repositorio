@@ -17,15 +17,14 @@ function eliminar(){
 function mru(){
 
 	eliminar();
-	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>" +
+	document.getElementById("f").innerHTML = "<input type='button'  class='botone' onclick='location.reload();'; value='Atras'/><br>" +
 
-	"<label for='Distancia'>Distancia:</label><br><input type='text' id='distancia' name='distancia'>" +
+	"<label class='lable' for='Distancia'>Distancia:</label><br><input type='number' id='distancia' name='distancia'> "+
 
-	"<br><label for='velocidad'>Velocidad:</label> <br><input type='text' id='Velocidad' name='velocidad'>"+
+	"<br><label class='lable' for='velocidad'>Velocidad:</label> <br><input type='number' id='Velocidad' name='velocidad'><br>"+
 
-	"<label for='tiempo'>Tiempo:</label> <br><input type='text' id='Tiempo' name='Tiempo'>"+ 
-	"<br><button onclick='verVacio()'>Calcular</button>";
-
+	"<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='Tiempo' name='Tiempo'><br>"+
+	"<br><button class='botone' onclick='verVacio()'>Calcular</button>";
 
 
 
@@ -33,74 +32,73 @@ function mru(){
 
 function mruv(){
 	eliminar();
-	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label for='VelocidadFinal'>Velocidad Final:</label> <br><input type='text' id='vFinal' name='Tiempo'><br>"+
-	 
-  "<label for='VelocidadInicial'>Velocidad Inicial:</label> <br><input type='text' id='vInicial' name='Tiempo'><br>"+
-   
-	"<label for='Distancia'>Distancia:</label><br><input type='text' id='distanciaMRUV' name='distancia'><br>"+
+	document.getElementById("f").innerHTML = "<input type='button' class='botone' onclick='location.reload();'; value='Atras'/><br>"+
+	"<label class='lable' for='VelocidadFinal'>Velocidad Final:</label> <br><input type='number' id='vFinal' name='Tiempo'><br>"+
 
-  "<label for='Aceleracion'>Aceleracion:</label> <br><input type='text' id='aceleracionMRUV' name='Tiempo'><br>"+
+  "<label class='lable' for='VelocidadInicial'>Velocidad Inicial:</label> <br><input type='number' id='vInicial' name='Tiempo'><br>"+
 
-  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='tiempoMRUV' name='Tiempo'><br>"+
+	"<label class='lable' for='Distancia'>Distancia:</label><br><input type='number' id='distanciaMRUV' name='distancia'><br> "+
+
+  "<label class='lable' for='Aceleracion'>Aceleracion:</label> <br><input type='number' id='aceleracionMRUV' name='Tiempo'><br>"+
+  "<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoMRUV' name='Tiempo'><br>"+
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
 "<input type='radio' id='vFinalRad' name='gender' value='male'>"+
 "<label for='male'>Velocidad Final</label><br>"+
 
 "	<input type='radio' id='vInicialRad' name='gender' value='female'>"+
-"<label for='female'>Velocidad Inicial</label><br>"+
+"<label  for='female'>Velocidad Inicial</label><br>"+
 
 "<input type='radio' id='distanciaRad' name='gender' value='female'>"+
-"<label for='female'>Distancia</label><br>"+
+"<label  for='female'>Distancia</label><br>"+
 
 "<input type='radio' id='aceleracionRad' name='gender' value='female'>"+
-"<label for='other'>Aceleracion</label>"+
+"<label  for='other'>Aceleracion</label>"+
 
 "<input type='radio' id='tiempoRad' name='gender' value='female'>"+
-"<label for='other'>Tiempo</label>"+
-"<br><button onclick='verDatos()'>Calcular</button>";
+"<label   for='other'>Tiempo</label>"+
+"<br><button class='botone' onclick='verDatos()'>Calcular</button>";
 
 }
 
 function cl(){
 	eliminar();
-	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label for='tiempo'>Velocidad Final:</label> <br><input type='text' id='vFinalCl' name='Tiempo'>"+
+	document.getElementById("f").innerHTML = "<input type='button' class='botone' onclick='location.reload();'; value='Atras'/><br>"+
+	"<label  for='tiempo'>Velocidad Final:</label> <br><input type='number' id='vFinalCl' name='Tiempo'><br>"+
 
-  "<label for='tiempo'>Velocidad Inicial:</label> <br><input type='text' id='vInicialCl' name='Tiempo'>"+
+  "<label  for='tiempo'>Velocidad Inicial:</label> <br><input type='number' id='vInicialCl' name='Tiempo'> <br>"+
 
-	"<label for='Distancia'>Altura:</label><br><input type='text' id='alturaCl' name='distancia'>"+
+	"<label  for='Distancia'>Altura:</label><br><input type='number' id='alturaCl' name='distancia'> <br>"+
 
-  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='tiempoCl' name='Tiempo'>"+
+  "<label  for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoCl' name='Tiempo'> <br>"+
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
 "<input type='radio' id='vFinalClRad' name='gender' value='male'>"+
-"<label for='male'>Velocidad Final</label><br>"+
+"<label  for='male'>Velocidad Final</label><br>"+
 
 "	<input type='radio' id='vInicialClRad' name='gender' value='female'>"+
-"<label for='female'>Velocidad Inicial</label><br>"+
+"<label  for='female'>Velocidad Inicial</label><br>"+
 
 "<input type='radio' id='alturaClRad' name='gender' value='female'>"+
-"<label for='female'>Altura</label><br>"+
+"<label  for='female'>Altura</label><br>"+
 
 "<input type='radio' id='tiempoClRad' name='gender' value='female'>"+
-"<label for='female'>Tiempo</label><br>"+
-"<br><button onclick='BuscarDatos()'>Calcular</button>";
+"<label  for='female'>Tiempo</label><br>"+
+"<br><button class='botone' onclick='BuscarDatos()'>Calcular</button>";
 
 
 }
 
 function tv(){
 	eliminar();
-	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label for='tiempo'>Velocidad Final:</label> <br><input type='text' id='vFinalTv' name='Tiempo'>"+ 
+	document.getElementById("f").innerHTML = "<input type='button' class='botone' onclick='location.reload();'; value='Atras'/><br>"+
+	"<label class='lable' for='tiempo'>Velocidad Final:</label> <br><input type='number' id='vFinalTv' name='Tiempo'><br>"+
 
-  "<label for='tiempo'>Velocidad Inicial:</label> <br><input type='text' id='vInicialTv' name='Tiempo'>"+ 
+  "<label class='lable' for='tiempo'>Velocidad Inicial:</label> <br><input type='number' id='vInicialTv' name='Tiempo'><br>"+
 
-	"<label for='Distancia'>Altura:</label><br><input type='text' id='alturaTv' name='distancia'> "+
+	"<label class='lable' for='Distancia'>Altura:</label><br><input type='number' id='alturaTv' name='distancia'> <br>"+
 
-  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='tiempoTv' name='Tiempo'>"+
+  "<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoTv' name='Tiempo'><br>"+
 
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
@@ -116,33 +114,22 @@ function tv(){
 "<input type='radio' id='tiempoTvRad' name='gender' value='female'>"+
 "<label for='other'>Tiempo</label>"+
 
-"<br><button onclick='FindDatos()'>Calcular</button>";
+"<br><button class='botone' onclick='FindDatos()'>Calcular</button>";
 
 
 }
 /////////////////animacion de loading
 function Animacion(){
-loading();
-//setTimeout(mostrar(), 3000);
 
+	
+	loading();	
+	
 }
-
-function mostrar(){
-
-	document.getElementById('cuerpo').style.visibility = "visible";
-
-}
-
-
 
 function loading(){
 
 	var style = document.createElement('style');
 	style.innerHTML = `
-	#cuerpo{
-		visibility: hidden;
-
-	  }
 	body{
 		margin: 0;
 		padding: 0;
@@ -150,7 +137,7 @@ function loading(){
 	  }
 	  .loading{
 		position: absolute;
-		top: 50%;
+		top: 10%;
 		left: 50%;
 		transform: translate(-50%,-50%);
 		height: 40px;
@@ -164,7 +151,8 @@ function loading(){
 		margin: 0 3px;
 		border-radius: 10px;
 		animation: loading 0.8s infinite;
-		animation-iteration-count: 5;
+		animation-iteration-count: 3;
+		animation-fill-mode: forwards;	
 	  }
 	  .obj:nth-child(2){
 		animation-delay: 0.1s;
@@ -206,9 +194,17 @@ function loading(){
 		  
 		}
 	  }
-	
+	  @keyframes fadeIn {
+		99% {
+		  visibility: hidden;
+		}
+		100% {
+		  visibility: visible;
+		}
+	  }
 	`;
 	document.head.appendChild(style);
 
 	
 }
+

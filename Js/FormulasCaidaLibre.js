@@ -132,18 +132,22 @@ function BuscarDatos(){
     if(vFinalClRad){
         
         if(vFinalCl == "" && alturaCl=="" && vInicialCl != "" && tiempoCl!= ""){
-        buscarvFinal(vInicialCl, 9.80, tiempoCl);
+            Animacion();
+            setTimeout( function(){buscarvFinal(vInicialCl, 9.80, tiempoCl)},3000);
         }
 
 
     }else if(vInicialClRad){
         if(vInicialCl == "" && alturaCl=="" && vFinalCl != "" && tiempoCl!= ""){
-            buscarvInicialSinAltura(vFinalCl, 9.80, tiempoCl);
+            Animacion();
+            setTimeout( function(){buscarvInicialSinAltura(vFinalCl, 9.80, tiempoCl)},3000);
             }else if(vInicialCl == "" && vFinalCl=="" && alturaCl != "" && tiempoCl!= ""){
-            buscarvInicialSinvFinalConaltura(alturaCl, 9.80, tiempoCl);
+                Animacion();
+                setTimeout( function(){buscarvInicialSinvFinalConaltura(alturaCl, 9.80, tiempoCl)},3000);
 
             }else if(vInicialCl == "" && alturaCl=="" && vFinalCl == "" && tiempoCl!= ""){
-            buscarvInicialSinAlturaSinvFinal(tiempoCl, 9.80)
+                Animacion();
+                setTimeout( function(){buscarvInicialSinAlturaSinvFinal(tiempoCl, 9.80)},3000);
 
             }
         
@@ -151,16 +155,20 @@ function BuscarDatos(){
 
     }else if(alturaClRad){
         if(alturaCl == "" && vFinalCl=="" && vInicialCl != "" && tiempoCl!= ""){
-            buscarAltura(vInicialCl , 9.80, tiempoCl);
+            Animacion();
+            setTimeout( function(){buscarAltura(vInicialCl , 9.80, tiempoCl)}, 3000);
 
         }
+
     }else if (tiempoClRad){
         if(tiempoCl == "" && alturaCl=="" && vFinalCl != "" && vInicialCl!= ""){
+            Animacion();
 
-            buscarTiempoConvFinal(vFinalCl, vInicialCl, 9.80);
+            setTimeout( function(){buscarTiempoConvFinal(vFinalCl, vInicialCl, 9.80)}, 3000);
         }else if(tiempoCl == "" && alturaCl=="" && vInicialCl != "" && vFinalCl== ""){
+            Animacion();
 
-            buscarTiempoSinvFinal(vInicialCl, 9.80);
+            setTimeout( function(){buscarTiempoSinvFinal(vInicialCl, 9.80)}, 3000);
         }
 
 

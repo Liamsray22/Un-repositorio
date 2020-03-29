@@ -37,17 +37,17 @@ function verVacio(){
 
     if(distancia == "" && velocidad != "" && tiempo != "" ){
         Animacion();
-        encontrarDistancia(velocidad,tiempo);
+        setTimeout( function(){encontrarDistancia(velocidad,tiempo)}, 3000);
 
     }else if(velocidad == "" && distancia != "" && tiempo != ""){
         Animacion();
 
-        encontrarVelocidad(distancia,tiempo);
+        setTimeout( function(){encontrarVelocidad(distancia,tiempo) }, 3000);
 
     }else if(tiempo == "" && velocidad != "" && distancia != ""){
         Animacion();
 
-        setTimeout(alert,3000      );
+        setTimeout(  function(){encontrarTiempo(distancia , velocidad)},3000      );
 
 
     }else{
