@@ -48,3 +48,11 @@
     opacity: 1;
     right: 0;
 }
+
+dialog[open] {
+  position: fixed;
+  width: 50%;
+  max-width: 750px;
+  top: 10px;
+  
+}

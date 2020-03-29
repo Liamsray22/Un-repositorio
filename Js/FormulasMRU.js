@@ -3,6 +3,12 @@ function encontrarVelocidad(distancia, tiempo){
     velocidad = parseFloat(distancia/tiempo);
     velocidadx = velocidad.toString();
     velocidadx = velocidadx.substring(0,5);
+
+    var dialogo = document.getElementById('DialogoNotificacion');
+    dialogo.show();
+    dialogo.addEventListener('click', () => dialogo.close());
+
+
     alert(velocidadx);
 
 }
