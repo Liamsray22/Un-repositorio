@@ -7,6 +7,10 @@ function buscarvFinal(vInicial, aceleracion, tiempo){
 
     vFinal = vInicial + (aceleracion * tiempo);
 
+    vFinalx = vFinal.toString();
+    vFinalx = vFinalx.substring(0,5);
+        VerResultado(vFinalx);
+
 }
 
 //Fin Velocidad Final***********************************************
@@ -21,6 +25,10 @@ function buscarvInicialSinAltura(vFinal, aceleracion, tiempo){
     tiempo = parseFloat(tiempo);
 
     vInicial = vFinal - (aceleracion*tiempo);
+    
+    vInicialx = vInicial.toString();
+    vInicialx = vInicialx.substring(0,5);
+        VerResultado(vInicialx);
 }
 
 function buscarvInicialSinvFinalConaltura(altura, aceleracion, tiempo){
@@ -30,6 +38,10 @@ function buscarvInicialSinvFinalConaltura(altura, aceleracion, tiempo){
 
     vInicial = (altura - (1/2)*aceleracion*Math.pow(tiempo, 2))/tiempo;
 
+    vInicialx = vInicial.toString();
+    vInicialx = vInicialx.substring(0,5);
+        VerResultado(vInicialx);
+
 
 }
 
@@ -38,6 +50,10 @@ function buscarvInicialSinAlturaSinvFinal(tiempo, aceleracion){
     tiempo = parseFloat(tiempo);
 
     vInicial = tiempo*aceleracion;
+
+    vInicialx = vInicial.toString();
+    vInicialx = vInicialx.substring(0,5);
+        VerResultado(vInicialx);
 
 
 }
@@ -54,10 +70,14 @@ function buscarAltura(vInicial, aceleracion, tiempo){
 
     altura = vInicial*tiempo + ((1/2)*aceleracion*Math.pow(tiempo, 2));
 
+    alturax = altura.toString();
+    alturax = alturax.substring(0,5);
+        VerResultado(alturax);
+
 
 }
 
-//Buscar Altura**************************************************************************
+//Fin Buscar Altura**************************************************************************
 
 
 //Buscar Tiempo
@@ -70,6 +90,10 @@ function buscarTiempoConvFinal(vFinal, vInicial, aceleracion){
 
     tiempo = (vFinal - vInicial)/aceleracion;
 
+    tiempox = tiempo.toString();
+    tiempox = tiempox.substring(0,5);
+        VerResultado(tiempox);
+
 
 
 }
@@ -80,6 +104,11 @@ function buscarTiempoSinvFinal(vInicial, aceleracion){
     aceleracion = parseFloat(aceleracion);
 
     tiempo = vInicial/aceleracion;
+
+    
+    tiempox = tiempo.toString();
+    tiempox = tiempox.substring(0,5);
+        VerResultado(tiempox);
 
 
 }
