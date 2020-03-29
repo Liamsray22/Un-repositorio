@@ -34,6 +34,7 @@ function verVacio(){
     velocidad = document.getElementById('Velocidad').value;
     tiempo = document.getElementById('Tiempo').value;
 
+
     if(distancia == "" && velocidad != "" && tiempo != "" ){
         encontrarDistancia(velocidad,tiempo);
 
@@ -48,13 +49,7 @@ function verVacio(){
 
 
     }
-
 }
 
-
-
-//encontrarVelocidad(12, 10);
-//encontrarTiempo(12, 46);
-//encontrarDistancia(12, 45);
 
 

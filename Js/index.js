@@ -17,22 +17,11 @@ function mru(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>" +
 
-	"<label for='Distancia'>Distancia:</label><br><input type='text' id='distancia' name='distancia'> <select id='cars'>"+
-	"<option value='volvo'>Mill</option>"+
-	"<option value='saab'>KM</option>"+
-	"<option value='mercedes'>M</option>"+
-  "</select>"+ 
-	"<br><label for='velocidad'>Velocidad:</label> <br><input type='text' id='Velocidad' name='velocidad'><select id='cars'>"+
-	"<option value='volvo'>Km/H</option>"+
-	"<option value='saab'>Mi/H</option>"+
-	"<option value='mercedes'>m/seg</option>"+
-  "</select><br>"+ 
-	"<label for='tiempo'>Tiempo:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
-	"<option value='volvo'>H</option>"+
-	"<option value='saab'>Min</option>"+
-	"<option value='mercedes'>Sec</option>"+
-	"<option value='audi'>Ms</option>"+
-  "</select> <br>"+ 
+	"<label for='Distancia'>Distancia:</label><br><input type='text' id='distancia' name='distancia'>" +
+
+	"<br><label for='velocidad'>Velocidad:</label> <br><input type='text' id='Velocidad' name='velocidad'>"+
+
+	"<label for='tiempo'>Tiempo:</label> <br><input type='text' id='Tiempo' name='Tiempo'>"+ 
 	"<br><button onclick='verVacio()'>Calcular</button>";
 
 
@@ -42,11 +31,8 @@ function mru(){
 function mruv(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label for='VelocidadFinal'>Velocidad Final:</label> <br><input type='text' id='vFinal' name='Tiempo'><select id='cars'>"+
-	"<option value='volvo'>Km/H</option>"+
-	"<option value='saab'>Mi/H</option>"+
-	"<option value='mercedes'>m/seg</option>"+
-  "</select><br>"+ 
+	"<label for='VelocidadFinal'>Velocidad Final:</label> <br><input type='text' id='vFinal' name='Tiempo'>"+
+	 
   "<label for='VelocidadInicial'>Velocidad Inicial:</label> <br><input type='text' id='vInicial' name='Tiempo'><select id='cars'>"+
 	"<option value='volvo'>Km/H</option>"+
 	"<option value='saab'>Mi/H</option>"+
