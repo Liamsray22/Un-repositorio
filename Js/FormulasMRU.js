@@ -36,13 +36,18 @@ function verVacio(){
 
 
     if(distancia == "" && velocidad != "" && tiempo != "" ){
+        Animacion();
         encontrarDistancia(velocidad,tiempo);
 
     }else if(velocidad == "" && distancia != "" && tiempo != ""){
+        Animacion();
+
         encontrarVelocidad(distancia,tiempo);
 
     }else if(tiempo == "" && velocidad != "" && distancia != ""){
-        encontrarTiempo(distancia , velocidad);
+        Animacion();
+
+        setTimeout(alert,3000      );
 
 
     }else{

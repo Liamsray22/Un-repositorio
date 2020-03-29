@@ -8,6 +8,7 @@
   margin: -150px 0 0 -270px;
   background: #72c2d4;
   border-radius: 10px;
+  
 }
 #mru, #mruv, #caida,  #tirov{
     width:97%;
@@ -71,8 +72,8 @@ dialog::backdrop {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20%;
-  z-index: 100;
-  
+  /*z-index: 100;
+  */
 
 
 }
