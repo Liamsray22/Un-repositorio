@@ -37,7 +37,7 @@ function verVacio(){
         encontrarVelocidad(distancia,tiempo);
 
     }else if(tiempo == "" && velocidad != "" && distancia != ""){
-        encontrarTiempo(velocidad, distancia);
+        encontrarTiempo(distancia , velocidad);
 
 
     }else{

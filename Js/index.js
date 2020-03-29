@@ -42,27 +42,27 @@ function mru(){
 function mruv(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label for='tiempo'>Velocidad Final:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+	"<label for='VelocidadFinal'>Velocidad Final:</label> <br><input type='text' id='vFinal' name='Tiempo'><select id='cars'>"+
 	"<option value='volvo'>Km/H</option>"+
 	"<option value='saab'>Mi/H</option>"+
 	"<option value='mercedes'>m/seg</option>"+
   "</select><br>"+ 
-  "<label for='tiempo'>Velocidad Inicial:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+  "<label for='VelocidadInicial'>Velocidad Inicial:</label> <br><input type='text' id='vInicial' name='Tiempo'><select id='cars'>"+
 	"<option value='volvo'>Km/H</option>"+
 	"<option value='saab'>Mi/H</option>"+
 	"<option value='mercedes'>m/seg</option>"+
   "</select><br>"+ 
-	"<label for='Distancia'>Distancia:</label><br><input type='text' id='distancia' name='distancia'> <select id='cars'>"+
+	"<label for='Distancia'>Distancia:</label><br><input type='text' id='distanciaMRUV' name='distancia'> <select id='cars'>"+
 	"<option value='volvo'>Mill</option>"+
 	"<option value='saab'>KM</option>"+
 	"<option value='mercedes'>M</option>"+
   "</select><br>"+ 
-  "<label for='tiempo'>Aceleracion:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+  "<label for='Aceleracion'>Aceleracion:</label> <br><input type='text' id='aceleracionMRUV' name='Tiempo'><select id='cars'>"+
 	"<option value='volvo'>m/s^2</option>"+
 	"<option value='saab'>Km/h^2</option>"+
 	"<option value='mercedes'>Mi/h^2</option>"+
   "</select> <br>"+
-  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='tiempoMRUV' name='Tiempo'><select id='cars'>"+
   "<option value='volvo'>H</option>"+
   "<option value='saab'>Min</option>"+
   "<option value='mercedes'>Sec</option>"+
@@ -70,16 +70,22 @@ function mruv(){
 "</select> <br>"+
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
-"<input type='radio' id='male' name='gender' value='male'>"+
-"<label for='male'>Male</label><br>"+
-"	<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='female'>Female</label><br>"+
-"<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='female'>Female</label><br>"+
-"<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='other'>Other</label>"+
-"<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='other'>Other</label>";
+"<input type='radio' id='vFinalRad' name='gender' value='male'>"+
+"<label for='male'>Velocidad Final</label><br>"+
+
+"	<input type='radio' id='vInicialRad' name='gender' value='female'>"+
+"<label for='female'>Velocidad Inicial</label><br>"+
+
+"<input type='radio' id='distanciaRad' name='gender' value='female'>"+
+"<label for='female'>Distancia</label><br>"+
+
+"<input type='radio' id='aceleracionRad' name='gender' value='female'>"+
+"<label for='other'>Aceleracion</label>"+
+
+"<input type='radio' id='tiempoRad' name='gender' value='female'>"+
+"<label for='other'>Tiempo</label>"+
+"<br><button onclick='verDatos()'>Calcular</button>";
+
 }
 
 function cl(){
