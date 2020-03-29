@@ -19,7 +19,7 @@ function mru(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button'  class='botone' onclick='location.reload();'; value='Atras'/><br>" +
 
-	"<label class='lable' for='Distancia'>Distancia:</label><br><input type='number' id='distancia' name='distancia'> "+
+	"<center><label class='lable' for='Distancia'>Distancia:</label><br><input type='number' id='distancia' name='distancia'> "+
 
 	"<br><label class='lable' for='velocidad'>Velocidad:</label> <br><input type='number' id='Velocidad' name='velocidad'><br>"+
 
@@ -33,14 +33,14 @@ function mru(){
 function mruv(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button' class='botone' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label class='lable' for='VelocidadFinal'>Velocidad Final:</label> <br><input type='number' id='vFinal' name='Tiempo'><br>"+
+	"<center><label class='lable' for='VelocidadFinal'>Velocidad Final:</label> <br><input type='number' id='vFinal' name='Tiempo'><br>"+
 
   "<label class='lable' for='VelocidadInicial'>Velocidad Inicial:</label> <br><input type='number' id='vInicial' name='Tiempo'><br>"+
 
 	"<label class='lable' for='Distancia'>Distancia:</label><br><input type='number' id='distanciaMRUV' name='distancia'><br> "+
 
   "<label class='lable' for='Aceleracion'>Aceleracion:</label> <br><input type='number' id='aceleracionMRUV' name='Tiempo'><br>"+
-  "<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoMRUV' name='Tiempo'><br>"+
+  "<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoMRUV' name='Tiempo'><br></center>"+
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
 "<input type='radio' id='vFinalRad' name='gender' value='male'>"+
@@ -64,13 +64,13 @@ function mruv(){
 function cl(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button' class='botone' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label  for='tiempo'>Velocidad Final:</label> <br><input type='number' id='vFinalCl' name='Tiempo'><br>"+
+	"<center><label class='lable' for='tiempo'>Velocidad Final:</label> <br><input type='number' id='vFinalCl' name='Tiempo'><br>"+
 
-  "<label  for='tiempo'>Velocidad Inicial:</label> <br><input type='number' id='vInicialCl' name='Tiempo'> <br>"+
+  "<label class='lable'  for='tiempo'>Velocidad Inicial:</label> <br><input type='number' id='vInicialCl' name='Tiempo'> <br>"+
 
-	"<label  for='Distancia'>Altura:</label><br><input type='number' id='alturaCl' name='distancia'> <br>"+
+	"<label  class='lable' for='Distancia'>Altura:</label><br><input type='number' id='alturaCl' name='distancia'> <br>"+
 
-  "<label  for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoCl' name='Tiempo'> <br>"+
+  "<label class='lable'  for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoCl' name='Tiempo'> <br></center>"+
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
 "<input type='radio' id='vFinalClRad' name='gender' value='male'>"+
@@ -92,13 +92,13 @@ function cl(){
 function tv(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button' class='botone' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label class='lable' for='tiempo'>Velocidad Final:</label> <br><input type='number' id='vFinalTv' name='Tiempo'><br>"+
+	"<center><label class='lable' for='tiempo'>Velocidad Final:</label> <br><input type='number' id='vFinalTv' name='Tiempo'><br>"+
 
   "<label class='lable' for='tiempo'>Velocidad Inicial:</label> <br><input type='number' id='vInicialTv' name='Tiempo'><br>"+
 
 	"<label class='lable' for='Distancia'>Altura:</label><br><input type='number' id='alturaTv' name='distancia'> <br>"+
 
-  "<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoTv' name='Tiempo'><br>"+
+  "<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoTv' name='Tiempo'><br></center>"+
 
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
