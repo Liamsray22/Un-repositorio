@@ -258,14 +258,3 @@ function encontrarTiempoSinvFinal(vInicial, aceleracion, distancia){
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
