@@ -266,15 +266,13 @@ function encontrarTiempoSinvFinal(vInicial, aceleracion, distancia){
 //Ver que pide
 
 function verDatos(){
-    try{
+    
     vInicial = document.getElementById('vInicial').value;
     vFinal = document.getElementById('vFinal').value;
     aceleracion = document.getElementById('aceleracionMRUV').value;
     tiempo = document.getElementById('tiempoMRUV').value;
     distancia = document.getElementById('distanciaMRUV').value;
-    }catch(Exception ){
-
-    }
+    
 
     vInicialRad = document.getElementById('vInicialRad').checked;
     vFinalRad = document.getElementById('vFinalRad').checked;

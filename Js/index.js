@@ -91,22 +91,22 @@ function mruv(){
 function cl(){
 	eliminar();
 	document.getElementById("f").innerHTML = "<input type='button' onclick='location.reload();'; value='Atras'/><br>"+
-	"<label for='tiempo'>Velocidad Final:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+	"<label for='tiempo'>Velocidad Final:</label> <br><input type='text' id='vFinalCl' name='Tiempo'><select id='cars'>"+
 	"<option value='volvo'>Km/H</option>"+
 	"<option value='saab'>Mi/H</option>"+
 	"<option value='mercedes'>m/seg</option>"+
   "</select><br>"+ 
-  "<label for='tiempo'>Velocidad Inicial:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+  "<label for='tiempo'>Velocidad Inicial:</label> <br><input type='text' id='vInicialCl' name='Tiempo'><select id='cars'>"+
 	"<option value='volvo'>Km/H</option>"+
 	"<option value='saab'>Mi/H</option>"+
 	"<option value='mercedes'>m/seg</option>"+
   "</select><br>"+ 
-	"<label for='Distancia'>Altura:</label><br><input type='text' id='distancia' name='distancia'> <select id='cars'>"+
+	"<label for='Distancia'>Altura:</label><br><input type='text' id='alturaCl' name='distancia'> <select id='cars'>"+
 	"<option value='volvo'>Mill</option>"+
 	"<option value='saab'>KM</option>"+
 	"<option value='mercedes'>M</option>"+
   "</select> <br>"+
-  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='Tiempo' name='Tiempo'><select id='cars'>"+
+  "<label for='tiempo'>Tiempo:</label> <br><input type='text' id='tiempoCl' name='Tiempo'><select id='cars'>"+
   "<option value='volvo'>H</option>"+
   "<option value='saab'>Min</option>"+
   "<option value='mercedes'>Sec</option>"+
@@ -114,14 +114,19 @@ function cl(){
 "</select> <br>"+
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
-"<input type='radio' id='male' name='gender' value='male'>"+
-"<label for='male'>Male</label><br>"+
-"	<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='female'>Female</label><br>"+
-"<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='female'>Female</label><br>"+
-"<input type='radio' id='female' name='gender' value='female'>"+
-"<label for='female'>Female</label><br>"
+"<input type='radio' id='vFinalClRad' name='gender' value='male'>"+
+"<label for='male'>Velocidad Final</label><br>"+
+
+"	<input type='radio' id='vInicialClRad' name='gender' value='female'>"+
+"<label for='female'>Velocidad Inicial</label><br>"+
+
+"<input type='radio' id='alturaClRad' name='gender' value='female'>"+
+"<label for='female'>Altura</label><br>"+
+
+"<input type='radio' id='tiempoClRad' name='gender' value='female'>"+
+"<label for='female'>Tiempo</label><br>"+
+"<br><button onclick='BuscarDatos()'>Calcular</button>";
+
 
 }
 

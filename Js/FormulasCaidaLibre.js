@@ -47,7 +47,7 @@ function buscarvInicialSinAlturaSinvFinal(tiempo, aceleracion){
 
 //Buscar Altura
 
-function buscarAltura(){
+function buscarAltura(vInicial, aceleracion, tiempo){
     vInicial = parseFloat(vInicial);
     aceleracion = parseFloat(aceleracion);
     tiempo = parseFloat(tiempo);
@@ -84,7 +84,62 @@ function buscarTiempoSinvFinal(vInicial, aceleracion){
 
 }
 
+//Fin Buscar Tiempo****************************************************
 
+
+function BuscarDatos(){
+    vInicialCl = document.getElementById('vInicialCl').value;
+    vFinalCl = document.getElementById('vFinalCl').value;
+    tiempoCl = document.getElementById('tiempoCl').value;
+    alturaCl = document.getElementById('alturaCl').value;
+    
+   
+    vInicialClRad = document.getElementById('vInicialClRad').checked;
+    vFinalClRad = document.getElementById('vFinalClRad').checked;
+    tiempoClRad = document.getElementById('tiempoClRad').checked;
+    alturaClRad = document.getElementById('alturaClRad').checked;
+    
+
+    if(vFinalClRad){
+        
+        if(vFinalCl == "" && alturaCl=="" && vInicialCl != "" && tiempoCl!= ""){
+        buscarvFinal(vInicialCl, 9.80, tiempoCl);
+        }
+
+
+    }else if(vInicialClRad){
+        if(vInicialCl == "" && alturaCl=="" && vFinalCl != "" && tiempoCl!= ""){
+            buscarvInicialSinAltura(vFinalCl, 9.80, tiempoCl);
+            }else if(vInicialCl == "" && vFinalCl=="" && alturaCl != "" && tiempoCl!= ""){
+            buscarvInicialSinvFinalConaltura(alturaCl, 9.80, tiempoCl);
+
+            }else if(vInicialCl == "" && alturaCl=="" && vFinalCl == "" && tiempoCl!= ""){
+            buscarvInicialSinAlturaSinvFinal(tiempoCl, 9.80)
+
+            }
+        
+
+
+    }else if(alturaClRad){
+        if(alturaCl == "" && vFinalCl=="" && vInicialCl != "" && tiempoCl!= ""){
+            buscarAltura(vInicialCl , 9.80, tiempoCl);
+
+        }
+    }else if (tiempoClRad){
+        if(tiempoCl == "" && alturaCl=="" && vFinalCl != "" && vInicialCl!= ""){
+
+            buscarTiempoConvFinal(vFinalCl, vInicialCl, 9.80);
+        }else if(tiempoCl == "" && alturaCl=="" && vInicialCl != "" && vFinalCl== ""){
+
+            buscarTiempoSinvFinal(vInicialCl, 9.80);
+        }
+
+
+
+    }
+
+
+}
 
 
 
