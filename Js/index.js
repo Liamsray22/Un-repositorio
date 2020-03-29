@@ -1,3 +1,5 @@
+
+
 function eliminar(){
 
 	var bot1 = document.getElementById('mru');
@@ -33,7 +35,7 @@ function mru(){
 	"<option value='mercedes'>Sec</option>"+
 	"<option value='audi'>Ms</option>"+
   "</select> <br>"+ 
-	"<br><button onclick='verVacio()'>Calcular</button>";
+	"<br><button onclick='verVacio(); loading();'>Calcular</button>";
 
 
 
@@ -171,4 +173,83 @@ function tv(){
 "<br><button onclick='FindDatos()'>Calcular</button>";
 
 
+}
+/////////////////animacion de loading
+
+function loading(){
+
+	var style = document.createElement('style');
+	style.innerHTML = `
+	#cuerpo{
+		visibility: hidden;
+
+	  }
+	body{
+		margin: 0;
+		padding: 0;
+		background: #2980b9;
+	  }
+	  .loading{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		height: 40px;
+		display: flex;
+		align-items: center;
+	  }
+	  .obj{
+		width: 6px;
+		height: 40px;
+		background: white;
+		margin: 0 3px;
+		border-radius: 10px;
+		animation: loading 0.8s infinite;
+		animation-iteration-count: 5;
+	  }
+	  .obj:nth-child(2){
+		animation-delay: 0.1s;
+	  }
+	  .obj:nth-child(3){
+		animation-delay: 0.2s;
+	  }
+	  .obj:nth-child(4){
+		animation-delay: 0.3s;
+	  }
+	  .obj:nth-child(5){
+		animation-delay: 0.4s;
+	  }
+	  .obj:nth-child(6){
+		animation-delay: 0.5s;
+	  }
+	  .obj:nth-child(7){
+		animation-delay: 0.6s;
+	  }
+	  .obj:nth-child(8){
+		animation-delay: 0.7s;
+	  }
+	  
+	  @keyframes moveFront {
+		0%   { right:25%; }
+		50% {z-index:3; right:0;}
+		100% { opacity: 1; right:25%;}
+	  }
+
+	  @keyframes loading {
+		0%{
+		  height: 0;
+		}
+		50%{
+		  height: 40px;
+		}
+		100%{
+		  height: 0;
+		  
+		}
+	  }
+	
+	`;
+	document.head.appendChild(style);
+
+	
 }
