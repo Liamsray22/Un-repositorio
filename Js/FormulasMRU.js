@@ -51,7 +51,7 @@ function verVacio(){
 
 
     }else{
-
+        confirm("Deje un campo vacio para buscar la magintud fisica de ese campo");
 
     }
 }

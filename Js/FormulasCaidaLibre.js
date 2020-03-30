@@ -134,6 +134,9 @@ function BuscarDatos(){
         if(vFinalCl == "" && alturaCl=="" && vInicialCl != "" && tiempoCl!= ""){
             Animacion();
             setTimeout( function(){buscarvFinal(vInicialCl, 9.80, tiempoCl)},3000);
+        }else{
+            confirm("Datos Incorrectos, Si busca la Velocidad Final recuerde \n que puede obtenerla con la Velocidad Inicial y el " +
+            "tiempo");
         }
 
 
@@ -149,6 +152,11 @@ function BuscarDatos(){
                 Animacion();
                 setTimeout( function(){buscarvInicialSinAlturaSinvFinal(tiempoCl, 9.80)},3000);
 
+            }else{
+
+                confirm("Datos Incorrectos, Si busca la Velocidad Inicial recuerde \n que puede obtenerla con la Velocidad Final y el " +
+            "tiempo. Tambien puede Encontrarla con la altura y el tiempo \n O tambien "+
+            "solo con el tiempo teniendo en cuenta que la gravedad es una constante");
             }
         
 
@@ -158,6 +166,10 @@ function BuscarDatos(){
             Animacion();
             setTimeout( function(){buscarAltura(vInicialCl , 9.80, tiempoCl)}, 3000);
 
+        }else{
+
+            confirm("Datos Incorrectos, Si busca la Altura recuerde \n que puede obtenerla con la Velocidad Inicial y el " +
+            "tiempo.");
         }
 
     }else if (tiempoClRad){
@@ -169,6 +181,10 @@ function BuscarDatos(){
             Animacion();
 
             setTimeout( function(){buscarTiempoSinvFinal(vInicialCl, 9.80)}, 3000);
+        }else{
+
+            confirm("Datos Incorrectos, Si busca El tiempo recuerde \n que puede obtenerla con la Velocidad Final y la Velocidad Inicial  " +
+            ". Tambien puede Encontrarlo con la Velocidad Inicial\n teniendo en cuenta que la gravedad es constante");
         }
 
 

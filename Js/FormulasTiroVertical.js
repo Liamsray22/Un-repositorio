@@ -184,6 +184,9 @@ function FindDatos(){
             setTimeout( function(){FindvInicialConvFinalConAltura(vFinalTv,9.80,alturaTv )},3000);
 
         }else{
+            confirm("Datos Incorrectos, Si busca la Velocidad Inicial recuerde \n que puede obtenerla con la Velocidad Final y el " +
+            "tiempo. Tambien puede Encontrarla con la altura, la Velocidad Final y el tiempo \n tambien "+
+            "solo con la Altura teniendo en cuenta que la gravedad es una constante");
 
         }
 
@@ -197,6 +200,8 @@ function FindDatos(){
             setTimeout( function(){FindvFinalConAltura(vInicialTv,alturaTv ,9.80)},3000);
 
         }else{
+            confirm("Datos Incorrectos, Si busca la Velocidad Final recuerde \n que puede obtenerla con la Velocidad Inicial y el " +
+            "tiempo. Tambien puede Encontrarla con la altura y la Velocidad Inicial");
 
         }
 
@@ -211,6 +216,8 @@ function FindDatos(){
             setTimeout( function(){Findtiempo(vInicialTv, 9.80)},3000);
 
         }else{
+            confirm("Datos Incorrectos, Si busca el tiempo recuerde \n que puede obtenerla con la Velocidad Final y la " +
+            "Velocidad Inicial. Tambien puede Encontrarlo con la Velocidad Inicial");
 
         }
 
@@ -224,6 +231,8 @@ function FindDatos(){
             setTimeout( function(){FindAlturaSinvFinal(vInicialTv, 9.80)},3000);
 
         }else{
+            confirm("Datos Incorrectos, Si busca la Altura recuerde \n que puede obtenerla con la Velocidad Final y la " +
+            "Velocidad Inicial. Tambien puede Encontrarla con la Velocidad Inicial");
 
         }
 

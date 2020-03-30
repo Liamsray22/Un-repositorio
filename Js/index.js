@@ -54,11 +54,11 @@ function mruv(){
 "<label  for='female'>Distancia</label><br>"+
 
 "<input type='radio' id='aceleracionRad' name='radio' value='female'>"+
-"<label  for='other'>Aceleracion</label>"+
+"<label  for='other'>Aceleracion</label><br>"+
 
 "<input type='radio' id='tiempoRad' name='radio' value='female'>"+
 "<label   for='other'>Tiempo</label>"+
-"<br><button class='botone' onclick='verDatos()'>Calcular</button>";
+"<br><center><button class='botone' onclick='verDatos()'>Calcular</button></center>";
 
 }
 
@@ -85,7 +85,7 @@ function cl(){
 
 "<input type='radio' id='tiempoClRad' name='gender' value='female'>"+
 "<label  for='female'>Tiempo</label><br>"+
-"<br><button class='botone' onclick='BuscarDatos()'>Calcular</button>";
+"<br><center><button class='botone' onclick='BuscarDatos()'>Calcular</button></center>";
 
 
 }
@@ -115,7 +115,7 @@ function tv(){
 "<input type='radio' id='tiempoTvRad' name='gender' value='female'>"+
 "<label for='other'>Tiempo</label>"+
 
-"<br><button class='botone' onclick='FindDatos()'>Calcular</button>";
+"<br><center><button class='botone' onclick='FindDatos()'>Calcular</button></center>";
 
 
 }

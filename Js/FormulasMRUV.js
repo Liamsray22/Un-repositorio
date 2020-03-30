@@ -358,6 +358,9 @@ function verDatos(){
 
 
         }else{
+            confirm("Datos Incorrectos, Si busca la Velocidad Inicial recuerde \n que puede obtenerla con la Velocidad Final, la aceleracion y el " +
+            "tiempo. Tambien puede Encontrarla con la Distancia, El tiempo y la Velocidad Final\n O tambien "+
+            "con la Velocidad final, la aceleracion y la distancia");
 
 
         }
@@ -380,6 +383,9 @@ function verDatos(){
             setTimeout( function(){encontrarvFsintiempo(vInicial, aceleracion, distancia)},3000);
 
         }else{
+            confirm("Datos Incorrectos, Si busca la Velocidad Final recuerde \n que puede obtenerla con la Velocidad Inicial, la aceleracion y el " +
+            "tiempo. Tambien puede Encontrarla con la Distancia, El tiempo y la Velocidad Inicial\n O tambien "+
+            "con la Velocidad Inicial, la aceleracion y la distancia");
 
 
         }
@@ -405,6 +411,9 @@ function verDatos(){
             setTimeout( function(){encontrarAceleracionSinTiempo(vInicial, vFinal, distancia)},3000);
 
         }else{
+            confirm("Datos Incorrectos, Si busca la Aceleracion recuerde \n que puede obtenerla con la Velocidad Final,la Velocidad Inicial y el " +
+            "tiempo. Tambien puede Encontrarla con la Distancia, El tiempo y la Velocidad Inicial\n O tambien "+
+            "con la Velocidad final, la Velocidad Inicial y la distancia");
 
 
         }
@@ -430,6 +439,9 @@ function verDatos(){
             setTimeout( function(){encontrarTiempoSinvFinal(vInicial, aceleracion, distancia)},3000);
 
         }else{
+            confirm("Datos Incorrectos, Si busca El tiempo recuerde \n que puede obtenerlo con la Velocidad Final,la Velocidad Inicial y la " +
+            "aceleracion. Tambien puede Encontrarlo con la Distancia, la Velocidad Final y la Velocidad Inicial\n O tambien "+
+            "con la aceleracion , la Velocidad Inicial y la distancia");
 
 
         }
@@ -453,6 +465,9 @@ function verDatos(){
             setTimeout( function(){encontrarDistanciaSinTiempo(vFinal,vInicial, aceleracion)},3000);
 
         }else{
+            confirm("Datos Incorrectos, Si busca la Distancia recuerde \n que puede obtenerla con la Velocidad Final,la Velocidad Inicial y el " +
+            "tiempo. Tambien puede Encontrarla con la aceleracion, El tiempo y la Velocidad Inicial\n O tambien "+
+            "con la Velocidad final, la Velocidad Inicial y la aceleracion");
 
 
         }
