@@ -11,7 +11,7 @@ function FindvFinal(vInicial, aceleracion, tiempo){
 
     vFinalx = vFinal.toString();
     vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
 }
 
@@ -23,7 +23,7 @@ function FindvFinalConAltura(vInicial,altura, aceleracion){
     vFinal = (2*aceleracion*altura) + vInicial;
     vFinalx = vFinal.toString();
     vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
 }
 
@@ -41,7 +41,7 @@ function Findtiempo(vInicial, aceleracion){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 
 }
@@ -55,7 +55,7 @@ function FindtiempoConvFinal(vInicial, vFinal, aceleracion){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 }
 
@@ -74,7 +74,7 @@ function FindvInicialSinvFinalConAltura(aceleracion, altura){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 }
 
@@ -87,7 +87,7 @@ function FindvInicialConvFinalSinAltura(vFinal, aceleracion, tiempo){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 
 }
@@ -100,7 +100,7 @@ function FindvInicialSinvFinalSinAltura(tiempo, aceleracion){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 }
 
@@ -113,7 +113,7 @@ function FindvInicialConvFinalConAltura(vFinal, aceleracion, altura){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 }
 
@@ -130,7 +130,7 @@ function FindAltura(vInicial, aceleracion, vFinal){
 
     alturax = altura.toString();
     alturax = alturax.substring(0,5);
-        VerResultado(alturax);
+        VerResultado(alturax, "m");
 
 }
 
@@ -143,7 +143,7 @@ function FindAlturaSinvFinal(vInicial, aceleracion){
 
     alturax = altura.toString();
     alturax = alturax.substring(0,5);
-        VerResultado(alturax);
+        VerResultado(alturax, "m");
 
 
 }

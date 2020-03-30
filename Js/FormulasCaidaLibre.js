@@ -9,7 +9,7 @@ function buscarvFinal(vInicial, aceleracion, tiempo){
 
     vFinalx = vFinal.toString();
     vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
 }
 
@@ -28,7 +28,7 @@ function buscarvInicialSinAltura(vFinal, aceleracion, tiempo){
     
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx,  "m/s");
 }
 
 function buscarvInicialSinvFinalConaltura(altura, aceleracion, tiempo){
@@ -40,7 +40,7 @@ function buscarvInicialSinvFinalConaltura(altura, aceleracion, tiempo){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 
 }
@@ -53,7 +53,7 @@ function buscarvInicialSinAlturaSinvFinal(tiempo, aceleracion){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 
 }
@@ -72,7 +72,7 @@ function buscarAltura(vInicial, aceleracion, tiempo){
 
     alturax = altura.toString();
     alturax = alturax.substring(0,5);
-        VerResultado(alturax);
+        VerResultado(alturax, "m");
 
 
 }
@@ -92,7 +92,7 @@ function buscarTiempoConvFinal(vFinal, vInicial, aceleracion){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 
 
@@ -108,7 +108,7 @@ function buscarTiempoSinvFinal(vInicial, aceleracion){
     
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 
 }
