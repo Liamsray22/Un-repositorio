@@ -43,19 +43,21 @@ function mruv(){
   "<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoMRUV' name='Tiempo'><br></center>"+
 /////////RADIO
 " <p>Por favor escoja que dato buscara:</p>"+
-"<input type='radio' id='vFinalRad' name='gender' value='male'>"+
+"<label class='radio'>One"+
+"<input type='radio' id='vFinalRad' name='radio' >"+
 "<label for='male'>Velocidad Final</label><br>"+
+"</label>"+
 
-"	<input type='radio' id='vInicialRad' name='gender' value='female'>"+
+"	<input type='radio' id='vInicialRad' name='radio' value='female'>"+
 "<label  for='female'>Velocidad Inicial</label><br>"+
 
-"<input type='radio' id='distanciaRad' name='gender' value='female'>"+
+"<input type='radio' id='distanciaRad' name='radio' value='female'>"+
 "<label  for='female'>Distancia</label><br>"+
 
-"<input type='radio' id='aceleracionRad' name='gender' value='female'>"+
+"<input type='radio' id='aceleracionRad' name='radio' value='female'>"+
 "<label  for='other'>Aceleracion</label>"+
 
-"<input type='radio' id='tiempoRad' name='gender' value='female'>"+
+"<input type='radio' id='tiempoRad' name='radio' value='female'>"+
 "<label   for='other'>Tiempo</label>"+
 "<br><button class='botone' onclick='verDatos()'>Calcular</button>";
 
