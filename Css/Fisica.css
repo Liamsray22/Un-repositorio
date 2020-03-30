@@ -10,6 +10,17 @@ input[type=number], select {
   border-bottom: 2px solid red;
 }
 
+dialog[open] {
+    position: fixed;
+    width: 50%;
+    max-width: 750px;
+    top: 10px;
+}
+dialog::backdrop {
+  background: linear-gradient(90deg, rgb(20%, 40%, 60%), rgb(60%, 20%, 40%));
+  mix-blend-mode: darken;
+}
+
 .lable{
 
   font-size: 18px;
