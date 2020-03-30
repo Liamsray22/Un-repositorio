@@ -42,13 +42,12 @@ function mruv(){
   "<label class='lable' for='Aceleracion'>Aceleracion:</label> <br><input type='number' id='aceleracionMRUV' name='Tiempo'><br>"+
   "<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='tiempoMRUV' name='Tiempo'><br></center>"+
 /////////RADIO
-" <p>Por favor escoja que dato buscara:</p>"+
-"<label class='radio'>One"+
+" <p><b>Por favor escoja que dato buscara:</b></p>"+
 "<input type='radio' id='vFinalRad' name='radio' >"+
-"<label for='male'>Velocidad Final</label><br>"+
-"</label>"+
+"<label for='male'><span></span>Velocidad Final</label><br>"+
 
-"	<input type='radio' id='vInicialRad' name='radio' value='female'>"+
+
+"<input type='radio' id='vInicialRad'  name='radio' value='female' >"+
 "<label  for='female'>Velocidad Inicial</label><br>"+
 
 "<input type='radio' id='distanciaRad' name='radio' value='female'>"+
