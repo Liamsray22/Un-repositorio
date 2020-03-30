@@ -115,7 +115,7 @@ dialog::backdrop {
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2) 1px,
     rgba(0, 0, 0, 0.3) 1px,
-    rgba(0, 0, 0, 0.3) 20px
+    rgba(0, 0, 0, 0.3) 10px
   );
   backdrop-filter: blur(3px);
 }
@@ -130,9 +130,10 @@ dialog::backdrop {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20%;
-    
+  border-style: solid;
+  border-radius: 5%;
   z-index: 100;
-  border-radius: 10%;
+  
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
 
