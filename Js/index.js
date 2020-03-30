@@ -23,8 +23,8 @@ function mru(){
 
 	"<br><label class='lable' for='velocidad'>Velocidad:</label> <br><input type='number' id='Velocidad' name='velocidad'><br>"+
 
-	"<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='Tiempo' name='Tiempo'><br></center>"+
-	"<br><button class='botone' onclick='verVacio(); animation();'>Calcular</button>";
+	"<label class='lable' for='tiempo'>Tiempo:</label> <br><input type='number' id='Tiempo' name='Tiempo'><br>"+
+	"<br><button class='botone' onclick='verVacio()'>Calcular</button>";
 
 
 
@@ -119,11 +119,13 @@ function tv(){
 
 }
 /////////////////animacion de loading
-function animation(){
-	setTimeout(loading(), 5000);
+function Animacion(){
+
 	
+	loading();	
 	
 }
+
 function loading(){
 
 	var style = document.createElement('style');
@@ -149,7 +151,7 @@ function loading(){
 		margin: 0 3px;
 		border-radius: 10px;
 		animation: loading 0.8s infinite;
-		animation-iteration-count: 5;
+		animation-iteration-count: 3;
 		animation-fill-mode: forwards;	
 	  }
 	  .obj:nth-child(2){

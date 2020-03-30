@@ -13,7 +13,7 @@ function encontrarVfsindistancia(vInicial, aceleracion, tiempo){
 
         vFinalx = vFinal.toString();
         vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
     }else if(aceleracion > 0){
 
@@ -21,7 +21,7 @@ function encontrarVfsindistancia(vInicial, aceleracion, tiempo){
         
         vFinalx = vFinal.toString();
         vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
     }else{
 
@@ -40,7 +40,7 @@ function encontrarvFsinaceleracion(distancia, tiempo, vInicial ){
     
     vFinalx = vFinal.toString();
     vFinalx = vFinalx.substring(0,5);
-    VerResultado(vFinalx);
+    VerResultado(vFinalx, "m/s");
 
 }
 
@@ -56,14 +56,14 @@ function encontrarvFsintiempo(vInicial, aceleracion, distancia){
     
     vFinalx = vFinal.toString();
     vFinalx = vFinalx.substring(0,5);
-    VerResultado(vFinalx);
+    VerResultado(vFinalx, "m/s");
     }else if(aceleracion > 0){
 
         vFinal = Math.sqrt(Math.pow(vInicial, 2) + (2*aceleracion*distancia) );
         
         vFinalx = vFinal.toString();
         vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
     }else{
 
@@ -92,7 +92,7 @@ function encontrarDistanciaSinAceleracion(vInicial, tiempo, vFinal){
 
         distanciax = distancia.toString();
         distanciax = distanciax.substring(0,5);
-        VerResultado(distanciax);
+        VerResultado(distanciax, "m");
 }
 
 
@@ -106,13 +106,13 @@ function encontrarDistanciavFinal(vInicial, tiempo, aceleracion){
         distancia = (vInicial * tiempo) - ((aceleracion*Math.pow(tiempo, 2)) / 2);
         distanciax = distancia.toString();
         distanciax = distanciax.substring(0,5);
-        VerResultado(distanciax);
+        VerResultado(distanciax, "m");
 
     }else if(aceleracion > 0){
         distancia = (vInicial * tiempo) + ((aceleracion*Math.pow(tiempo, 2)) / 2);
         distanciax = distancia.toString();
         distanciax = distanciax.substring(0,5);
-        VerResultado(distanciax);
+        VerResultado(distanciax, "m");
 
     }else{
 
@@ -131,13 +131,13 @@ function encontrarDistanciaSinTiempo(vFinal, vInicial, aceleracion){
         distancia = (Math.pow(vFinal, 2)- Math.pow(vInicial, 2)/(-2*aceleracion));
         distanciax = distancia.toString();
         distanciax = distanciax.substring(0,5);
-        VerResultado(distanciax);
+        VerResultado(distanciax, "m");
 
     }else if(aceleracion > 0){
         distancia = (Math.pow(vFinal, 2)- Math.pow(vInicial, 2)/(-2*aceleracion));
         distanciax = distancia.toString();
         distanciax = distanciax.substring(0,5);
-        VerResultado(distanciax);
+        VerResultado(distanciax, "m");
 
     }else{
 
@@ -161,7 +161,7 @@ function encontrarVisindistancia(vFinal, aceleracion, tiempo){
 
         vInicialx = vInicial.toString();
         vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
     }else if(aceleracion > 0){
 
@@ -169,7 +169,7 @@ function encontrarVisindistancia(vFinal, aceleracion, tiempo){
 
         vInicialx = vInicial.toString();
         vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
     }else{
 
@@ -188,7 +188,7 @@ function encontrarvIsinaceleracion(distancia, tiempo, vFinal ){
 
     vInicialx = vInicial.toString();
         vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 }
 
@@ -204,7 +204,7 @@ function encontrarvIsintiempo(vFinal, aceleracion, distancia){
 
     vInicialx = vInicial.toString();
         vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
     }else if(aceleracion > 0){
 
@@ -212,7 +212,7 @@ function encontrarvIsintiempo(vFinal, aceleracion, distancia){
 
         vInicialx = vInicial.toString();
         vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
     }else{
 
@@ -237,7 +237,7 @@ function encontrarAceleracionSinDistancia(vFinal, tiempo, vInicial){
 
     aceleracionx = aceleracion.toString();
         aceleracionx = aceleracionx.substring(0,5);
-        VerResultado(aceleracionx);
+        VerResultado(aceleracionx, "m/s^2");
 
 }
 
@@ -250,7 +250,7 @@ function encontrarAceleracionSinvFinal(vInicial, tiempo, distancia){
     
     aceleracionx = aceleracion.toString();
         aceleracionx = aceleracionx.substring(0,5);
-        VerResultado(aceleracionx);
+        VerResultado(aceleracionx, "m/s^2");
 
 
 
@@ -265,7 +265,7 @@ function encontrarAceleracionSinTiempo(vInicial, vFinal, distancia){
 
     aceleracionx = aceleracion.toString();
         aceleracionx = aceleracionx.substring(0,5);
-        VerResultado(aceleracionx);
+        VerResultado(aceleracionx, "m/s^2");
 
 
 }
@@ -287,7 +287,7 @@ function encontrarTiempoSinDistancia(vFinal, vInicial, aceleracion){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 }
 
@@ -300,7 +300,7 @@ function encontrarTiempoSinAceleracion(vInicial, vFinal, distancia){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 }
 
@@ -314,7 +314,7 @@ function encontrarTiempoSinvFinal(vInicial, aceleracion, distancia){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 
 
@@ -343,13 +343,19 @@ function verDatos(){
 
     if(vInicialRad){
         if(vInicial == ""&& distancia == ""  && vFinal != "" && aceleracion != "" && tiempo != ""){
-            encontrarVisindistancia(vFinal, aceleracion, tiempo);
+            Animacion();
+
+            setTimeout( function(){encontrarVisindistancia(vFinal, aceleracion, tiempo)}, 3000);
 
         }else if(vInicial == "" &&aceleracion=="" && distancia != "" && tiempo != "" && vFinal!= "" ){
-            encontrarvIsinaceleracion(distancia, tiempo, vFinal);
+            Animacion();
+
+            setTimeout( function(){encontrarvIsinaceleracion(distancia, tiempo, vFinal)},3000);
 
         }else if(vInicial == "" && tiempo =="" && vFinal != "" && aceleracion != "" && distancia != ""){
-            encontrarvIsintiempo(vFinal, aceleracion, distancia);
+            Animacion();
+            setTimeout( function(){encontrarvIsintiempo(vFinal, aceleracion, distancia)},3000);
+
 
         }else{
 
@@ -359,13 +365,19 @@ function verDatos(){
 
     }else if(vFinalRad){
         if(vFinal == ""&& distancia == ""  && vInicial != "" && aceleracion != "" && tiempo != ""){
-            encontrarVfsindistancia(vInicial, aceleracion, tiempo);
+            Animacion();
+
+            setTimeout( function(){encontrarVfsindistancia(vInicial, aceleracion, tiempo)},3000);
 
         }else if(vFinal == "" &&aceleracion=="" && distancia != "" && tiempo != "" && vInicial!= "" ){
-            encontrarvFsinaceleracion(distancia, tiempo, vInicial);
+            Animacion();
+
+            setTimeout( function(){encontrarvFsinaceleracion(distancia, tiempo, vInicial)},3000);
 
         }else if(vFinal == "" && tiempo =="" && vInicial != "" && aceleracion != "" && distancia != ""){
-            encontrarvFsintiempo(vInicial, aceleracion, distancia);
+            Animacion();
+
+            setTimeout( function(){encontrarvFsintiempo(vInicial, aceleracion, distancia)},3000);
 
         }else{
 
@@ -378,13 +390,19 @@ function verDatos(){
 
     }else if(aceleracionRad){
         if(aceleracion == ""&& distancia == ""  && vInicial != "" && vFinal != "" && tiempo != ""){
-            encontrarAceleracionSinDistancia(vFinal, tiempo, vInicial);
+            Animacion();
+
+            setTimeout( function(){encontrarAceleracionSinDistancia(vFinal, tiempo, vInicial)},3000);
 
         }else if(aceleracion == "" &&vFinal=="" && distancia != "" && tiempo != "" && vInicial!= "" ){
-            encontrarAceleracionSinvFinal(vInicial, tiempo, distancia );
+            Animacion();
+
+            setTimeout( function(){encontrarAceleracionSinvFinal(vInicial, tiempo, distancia )},3000);
 
         }else if(aceleracion == "" && tiempo =="" && vInicial != "" && vFinal != "" && distancia != ""){
-            encontrarAceleracionSinTiempo(vInicial, vFinal, distancia);
+            Animacion();
+
+            setTimeout( function(){encontrarAceleracionSinTiempo(vInicial, vFinal, distancia)},3000);
 
         }else{
 
@@ -397,13 +415,19 @@ function verDatos(){
     }else if(tiempoRad){
 
         if(tiempo == ""&& distancia == ""  && vInicial != "" && vFinal != "" && aceleracion != ""){
-            encontrarTiempoSinDistancia(vFinal, vInicial, aceleracion);
+            Animacion();
+
+            setTimeout( function(){encontrarTiempoSinDistancia(vFinal, vInicial, aceleracion)},3000);
 
         }else if(tiempo == "" &&aceleracion=="" && distancia != "" && vFinal != "" && vInicial!= "" ){
-            encontrarTiempoSinAceleracion(vInicial,vFinal, distancia );
+            Animacion();
+
+            setTimeout( function(){encontrarTiempoSinAceleracion(vInicial,vFinal, distancia )},3000);
 
         }else if(tiempo == "" && vFinal =="" && vInicial != "" && aceleracion != "" && distancia != ""){
-            encontrarTiempoSinvFinal(vInicial, aceleracion, distancia);
+            Animacion();
+
+            setTimeout( function(){encontrarTiempoSinvFinal(vInicial, aceleracion, distancia)},3000);
 
         }else{
 
@@ -414,13 +438,19 @@ function verDatos(){
 
     }else if(distanciaRad){
         if(distancia == ""&& aceleracion == ""  && vInicial != "" && vFinal != "" && tiempo != ""){
-            encontrarDistanciaSinAceleracion(vInicial, tiempo,vFinal);
+            Animacion();
+
+            setTimeout( function(){encontrarDistanciaSinAceleracion(vInicial, tiempo,vFinal)},3000);
 
         }else if(distancia == "" &&vFinal=="" && tiempo != "" && aceleracion != "" && vInicial!= "" ){
-            encontrarDistanciavFinal(vInicial,tiempo,aceleracion );
+            Animacion();
+
+            setTimeout( function(){encontrarDistanciavFinal(vInicial,tiempo,aceleracion )},3000);
 
         }else if(distancia == "" && tiempo =="" && vInicial != "" && aceleracion != "" && vFinal != ""){
-            encontrarDistanciaSinTiempo(vFinal,vInicial, aceleracion);
+            Animacion();
+
+            setTimeout( function(){encontrarDistanciaSinTiempo(vFinal,vInicial, aceleracion)},3000);
 
         }else{
 

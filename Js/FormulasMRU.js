@@ -3,7 +3,7 @@ function encontrarVelocidad(distancia, tiempo){
     velocidad = parseFloat(distancia/tiempo);
     velocidadx = velocidad.toString();
     velocidadx = velocidadx.substring(0,5);
-    VerResultado(velocidadx);
+    VerResultado(velocidadx, "m/s");
 
 
 
@@ -14,7 +14,7 @@ function encontrarTiempo(distancia, velocidad){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-    VerResultado(tiempox);
+    VerResultado(tiempox, "s");
 
     
 }
@@ -23,7 +23,7 @@ function encontrarDistancia(velocidad, tiempo){
     distancia = parseFloat(tiempo * velocidad);
     distanciax = distancia.toString();
     distanciax = distanciax.substring(0,5)
-    VerResultado(distanciax);
+    VerResultado(distanciax , "m");
 
 }
 
@@ -34,27 +34,27 @@ function verVacio(){
     velocidad = document.getElementById('Velocidad').value;
     tiempo = document.getElementById('Tiempo').value;
 
+
     if(distancia == "" && velocidad != "" && tiempo != "" ){
-        encontrarDistancia(velocidad,tiempo);
+        Animacion();
+        setTimeout( function(){encontrarDistancia(velocidad,tiempo)}, 3000);
 
     }else if(velocidad == "" && distancia != "" && tiempo != ""){
-        encontrarVelocidad(distancia,tiempo);
+        Animacion();
+
+        setTimeout( function(){encontrarVelocidad(distancia,tiempo) }, 3000);
 
     }else if(tiempo == "" && velocidad != "" && distancia != ""){
-        encontrarTiempo(distancia , velocidad);
+        Animacion();
+
+        setTimeout(  function(){encontrarTiempo(distancia , velocidad)},3000      );
 
 
     }else{
 
 
     }
-
 }
 
-
-
-//encontrarVelocidad(12, 10);
-//encontrarTiempo(12, 46);
-//encontrarDistancia(12, 45);
 
 

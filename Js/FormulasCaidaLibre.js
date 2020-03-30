@@ -9,7 +9,7 @@ function buscarvFinal(vInicial, aceleracion, tiempo){
 
     vFinalx = vFinal.toString();
     vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
 }
 
@@ -28,7 +28,7 @@ function buscarvInicialSinAltura(vFinal, aceleracion, tiempo){
     
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx,  "m/s");
 }
 
 function buscarvInicialSinvFinalConaltura(altura, aceleracion, tiempo){
@@ -40,7 +40,7 @@ function buscarvInicialSinvFinalConaltura(altura, aceleracion, tiempo){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 
 }
@@ -53,7 +53,7 @@ function buscarvInicialSinAlturaSinvFinal(tiempo, aceleracion){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 
 }
@@ -72,7 +72,7 @@ function buscarAltura(vInicial, aceleracion, tiempo){
 
     alturax = altura.toString();
     alturax = alturax.substring(0,5);
-        VerResultado(alturax);
+        VerResultado(alturax, "m");
 
 
 }
@@ -92,7 +92,7 @@ function buscarTiempoConvFinal(vFinal, vInicial, aceleracion){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 
 
@@ -108,7 +108,7 @@ function buscarTiempoSinvFinal(vInicial, aceleracion){
     
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 
 }
@@ -132,18 +132,22 @@ function BuscarDatos(){
     if(vFinalClRad){
         
         if(vFinalCl == "" && alturaCl=="" && vInicialCl != "" && tiempoCl!= ""){
-        buscarvFinal(vInicialCl, 9.80, tiempoCl);
+            Animacion();
+            setTimeout( function(){buscarvFinal(vInicialCl, 9.80, tiempoCl)},3000);
         }
 
 
     }else if(vInicialClRad){
         if(vInicialCl == "" && alturaCl=="" && vFinalCl != "" && tiempoCl!= ""){
-            buscarvInicialSinAltura(vFinalCl, 9.80, tiempoCl);
+            Animacion();
+            setTimeout( function(){buscarvInicialSinAltura(vFinalCl, 9.80, tiempoCl)},3000);
             }else if(vInicialCl == "" && vFinalCl=="" && alturaCl != "" && tiempoCl!= ""){
-            buscarvInicialSinvFinalConaltura(alturaCl, 9.80, tiempoCl);
+                Animacion();
+                setTimeout( function(){buscarvInicialSinvFinalConaltura(alturaCl, 9.80, tiempoCl)},3000);
 
             }else if(vInicialCl == "" && alturaCl=="" && vFinalCl == "" && tiempoCl!= ""){
-            buscarvInicialSinAlturaSinvFinal(tiempoCl, 9.80)
+                Animacion();
+                setTimeout( function(){buscarvInicialSinAlturaSinvFinal(tiempoCl, 9.80)},3000);
 
             }
         
@@ -151,16 +155,20 @@ function BuscarDatos(){
 
     }else if(alturaClRad){
         if(alturaCl == "" && vFinalCl=="" && vInicialCl != "" && tiempoCl!= ""){
-            buscarAltura(vInicialCl , 9.80, tiempoCl);
+            Animacion();
+            setTimeout( function(){buscarAltura(vInicialCl , 9.80, tiempoCl)}, 3000);
 
         }
+
     }else if (tiempoClRad){
         if(tiempoCl == "" && alturaCl=="" && vFinalCl != "" && vInicialCl!= ""){
+            Animacion();
 
-            buscarTiempoConvFinal(vFinalCl, vInicialCl, 9.80);
+            setTimeout( function(){buscarTiempoConvFinal(vFinalCl, vInicialCl, 9.80)}, 3000);
         }else if(tiempoCl == "" && alturaCl=="" && vInicialCl != "" && vFinalCl== ""){
+            Animacion();
 
-            buscarTiempoSinvFinal(vInicialCl, 9.80);
+            setTimeout( function(){buscarTiempoSinvFinal(vInicialCl, 9.80)}, 3000);
         }
 
 

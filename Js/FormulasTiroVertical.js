@@ -11,7 +11,7 @@ function FindvFinal(vInicial, aceleracion, tiempo){
 
     vFinalx = vFinal.toString();
     vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
 }
 
@@ -23,7 +23,7 @@ function FindvFinalConAltura(vInicial,altura, aceleracion){
     vFinal = (2*aceleracion*altura) + vInicial;
     vFinalx = vFinal.toString();
     vFinalx = vFinalx.substring(0,5);
-        VerResultado(vFinalx);
+        VerResultado(vFinalx, "m/s");
 
 }
 
@@ -41,7 +41,7 @@ function Findtiempo(vInicial, aceleracion){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 
 }
@@ -55,7 +55,7 @@ function FindtiempoConvFinal(vInicial, vFinal, aceleracion){
 
     tiempox = tiempo.toString();
     tiempox = tiempox.substring(0,5);
-        VerResultado(tiempox);
+        VerResultado(tiempox, "s");
 
 }
 
@@ -74,7 +74,7 @@ function FindvInicialSinvFinalConAltura(aceleracion, altura){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 }
 
@@ -87,7 +87,7 @@ function FindvInicialConvFinalSinAltura(vFinal, aceleracion, tiempo){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 
 }
@@ -100,7 +100,7 @@ function FindvInicialSinvFinalSinAltura(tiempo, aceleracion){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 }
 
@@ -113,7 +113,7 @@ function FindvInicialConvFinalConAltura(vFinal, aceleracion, altura){
 
     vInicialx = vInicial.toString();
     vInicialx = vInicialx.substring(0,5);
-        VerResultado(vInicialx);
+        VerResultado(vInicialx, "m/s");
 
 }
 
@@ -130,7 +130,7 @@ function FindAltura(vInicial, aceleracion, vFinal){
 
     alturax = altura.toString();
     alturax = alturax.substring(0,5);
-        VerResultado(alturax);
+        VerResultado(alturax, "m");
 
 }
 
@@ -143,7 +143,7 @@ function FindAlturaSinvFinal(vInicial, aceleracion){
 
     alturax = altura.toString();
     alturax = alturax.substring(0,5);
-        VerResultado(alturax);
+        VerResultado(alturax, "m");
 
 
 }
@@ -168,16 +168,20 @@ function FindDatos(){
     if(vInicialTvRad){
 
         if(vInicialTv == "" && alturaTv!="" && vFinalTv == "" && tiempoTv== ""){
-            FindvInicialSinvFinalConAltura(9.80, alturaTv);
+            Animacion();
+            setTimeout( function(){FindvInicialSinvFinalConAltura(9.80, alturaTv)},3000);
 
         }else if(vInicialTv == "" && alturaTv=="" && vFinalTv != "" && tiempo!= ""){
-            FindvInicialConvFinalSinAltura(vFinalTv ,9.80, tiempoTv);
+            Animacion();
+            setTimeout( function(){FindvInicialConvFinalSinAltura(vFinalTv ,9.80, tiempoTv)},3000);
 
         }else if(vInicialTv == "" && alturaTv=="" && vFinalTv == "" && tiempo!= ""){
-            FindvInicialSinvFinalSinAltura(tiempo,9.80);
+            Animacion();
+            setTimeout( function(){FindvInicialSinvFinalSinAltura(tiempo,9.80)},3000);
 
         }else if(vInicialTv == "" && alturaTv!="" && vFinalTv != "" && tiempo== ""){
-            FindvInicialConvFinalConAltura(vFinalTv,9.80,alturaTv );
+            Animacion();
+            setTimeout( function(){FindvInicialConvFinalConAltura(vFinalTv,9.80,alturaTv )},3000);
 
         }else{
 
@@ -186,9 +190,11 @@ function FindDatos(){
     }else if(vFinalTvRad){
 
         if(vFinalTv == "" && alturaTv=="" && vInicialTv != "" && tiempoTv!= ""){
-            FindvFinal(vInicialTv, 9.80, tiempoTv);
+            Animacion();
+            setTimeout( function(){FindvFinal(vInicialTv, 9.80, tiempoTv)},3000);
         }else if(vFinalTv == "" && alturaTv!="" && vInicialTv != "" && tiempo== ""){
-            FindvFinalConAltura(vInicialTv,alturaTv ,9.80);
+            Animacion();
+            setTimeout( function(){FindvFinalConAltura(vInicialTv,alturaTv ,9.80)},3000);
 
         }else{
 
@@ -198,9 +204,11 @@ function FindDatos(){
 
     }else if(tiempoTvRad){
         if(tiempoTv == "" && alturaTv=="" && vInicialTv != "" && vFinalTv!= ""){
-            FindtiempoConvFinal(vInicialTv, vFinalTv, 9.80);
+            Animacion();
+            setTimeout( function(){FindtiempoConvFinal(vInicialTv, vFinalTv, 9.80)},3000);
         }else if(tiempoTv == "" && alturaTv=="" && vInicialTv != "" && vFinalTv== ""){
-            Findtiempo(vInicialTv, 9.80);
+            Animacion();
+            setTimeout( function(){Findtiempo(vInicialTv, 9.80)},3000);
 
         }else{
 
@@ -209,9 +217,11 @@ function FindDatos(){
 
     }else if(alturaTvRad){
         if(alturaTv == "" && tiempoTv=="" && vInicialTv != "" && vFinalTv!= ""){
-            FindAltura(vInicialTv,9.80 ,vFinalTv);
+            Animacion();
+            setTimeout( function(){FindAltura(vInicialTv,9.80 ,vFinalTv)},3000);
         }else if(alturaTv == "" && tiempoTv=="" && vInicialTv != "" && vFinalTv== ""){
-            FindAlturaSinvFinal(vInicialTv, 9.80);
+            Animacion();
+            setTimeout( function(){FindAlturaSinvFinal(vInicialTv, 9.80)},3000);
 
         }else{
 
